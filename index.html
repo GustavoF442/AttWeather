@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Agora!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="weather-data" class="hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">São João Batista</span>
+                <img src="https://flagcdn.com/w320/br.png" id="country">
+            </h2>
+            <p id="temperature"><span>38</span>&deg;</p>
+
+            <div id="description-container">
+                <p id="description">Nublado</p>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Condições Climáticas" id="weather-icon">
+            </div>
+
+            <div id="items">
+                <div id="details-container">
+                    <p id="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>48%</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>10 km/h</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="temp-min">
+                        <i class="fa-solid fa-temperature-low"></i>
+                        <span>18°C</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="temp-max">
+                        <i class="fa-solid fa-temperature-high"></i>
+                        <span>38°C</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="pressure">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>1011 hPa</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="sea_level">
+                        <i class="fa-solid fa-water"></i>
+                        <span>1011 m</span>
+                    </p>
+                </div>
+    
+                <div id="details-container">
+                    <p id="grnd_level">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <span>1011 m</span>
+                    </p>
+                </div>
+            </div>
+            </div>
+
+        <div id="error-message" class="hide">
+            <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+        </div>
+
+        <div id="loader" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
+
+        <div id="suggestions">
+            <button id="madrid">Madrid</button>
+            <button id="tokyo">Tokyo</button>
+            <button id="londres">Londres</button>
+            <button id="paris">Paris</button>
+            <button id="nyc">Nova York</button>
+            <button id="berlim">Berlim</button>
+            <button id="moscou">Moscou</button>
+            <button id="seul">Seul</button>
+        </div>
+    </div>
+</body>
+</html>
