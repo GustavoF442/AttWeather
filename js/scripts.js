@@ -1,4 +1,4 @@
-const apiKey = "75021ab700f228ded290f5984310e49e";
+const apiKey = "";
 const apiCountryURL = "https://flagcdn.com/w320/"; // URL para as bandeiras
 const apiUnsplash = "https://source.unsplash.com/1600x900/?"; // URL para as imagens do Unsplash
 
